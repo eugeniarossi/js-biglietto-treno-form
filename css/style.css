@@ -59,8 +59,8 @@ SECTION FORM
 
 .form_container .inputs {
     display: flex;
-    justify-content: center;
-    gap: 3.75rem;
+    flex-direction: column;
+    gap: 1.5625rem;
     padding-bottom: 3.125rem;
 }
 
@@ -111,6 +111,7 @@ SECTION TICKET
 
 .ticket {
     display: flex;
+    flex-direction: column;
     border-top: 1px solid var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
@@ -123,8 +124,30 @@ SECTION TICKET
     background-color: var(--secondary-color);
 }
 
+.ticket #ticket_main {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.ticket #ticket_main > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         width: 80%;
+    }
+
+    .form_container .inputs {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .ticket {
+        flex-direction: row;
     }
 }
