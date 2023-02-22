@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biglietto Treno Form</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <form action="/" method="get">
-        <input type="text" name="km" id="input_km" placeholder="Inserisci i km che vuoi percorrere">
-        <input type="text" name="eta" id="input_age" placeholder="Inserisci la tua età">
+        <input type="text" name="nome" id="input_name">
+        <input type="text" name="km" id="input_km">
+        <input type="text" name="eta" id="input_age">
         <button id="form_button" type="button">Calcola</button>
     </form>
-    <h1 id="titolo"></h1>
+    <div id="nome_utente"></div>
+    <div id="prezzo_biglietto"></div>
+
+    <!-- import javascript -->
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -6,7 +6,8 @@ const button = document.getElementById('form_button');
 // Definisco la variabile con il prezzo al km
 const priceKm = 0.21;
 
-// Definisco le variabili per gli input eta e km
+// Definisco le variabili per gli input nome, eta e km
+let inputName;
 let inputAge;
 let inputKm;
 
@@ -16,10 +17,11 @@ let price;
 // Evento click del button
 button.addEventListener('click', 
     function() {
-        
+
         // Salvo i valori degli input nelle variabili
         inputAge = Number(document.getElementById("input_age").value);
         inputKm = Number(document.getElementById("input_km").value);
+        inputName = document.getElementById('input_name').value;
         price = priceKm * inputKm;
 
         // Calcolo lo sconto e lo applico alla variabile price
@@ -35,5 +37,9 @@ button.addEventListener('click',
 
         // Stampo il prezzo finale in forma umana in console
         console.log(`€ ${price.toFixed(2)}`);
+
+        // Stampo nome passeggero e prezzo del biglietto sulla pagina
+        document.getElementById('nome_utente').innerHTML = inputName;
+        document.getElementById('prezzo_biglietto').innerHTML = price.toFixed(2);
 });
 
