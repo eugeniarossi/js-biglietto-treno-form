@@ -1,32 +1,39 @@
 'use strict';
 
-// Chiedo all'utente i km che vuole percorrere e li salvo nella variabile userKm
-const userKm= Number(prompt('Inserisci i km che vuoi percorrere'));
+// Definisco la variabile button
+const button = document.getElementById('form_button');
 
-// Chiedo all'utente l'età e la salvo nella variabile userAge
-const userAge = Number(prompt('Inserisci la tua età'));
-
-// Definisco la variabile priceKm = 0.21
+// Definisco la variabile con il prezzo al km
 const priceKm = 0.21;
 
-// Definisco la variabile message
-let message = 'Prezzo biglietto';
+// Definisco le variabili per gli input eta e km
+let inputAge;
+let inputKm;
 
-// Definisco la variabile price con il calcolo del prezzo
-let price = priceKm * userKm;
+// Definisco la variabile price per il prezzo
+let price;
 
-// Calcolo il prezzo con lo sconto
-if(userAge < 18) {
-    message = 'Prezzo con sconto minorenne';
-    price = price * 0.8;
-    
-} else if (userAge > 65) {
-    message = 'Prezzo con sconto over';
-    price = price * 0.6;
-}
+// Evento click del button
+button.addEventListener('click', 
+    function() {
+        
+        // Salvo i valori degli input nelle variabili
+        inputAge = Number(document.getElementById("input_age").value);
+        inputKm = Number(document.getElementById("input_km").value);
+        price = priceKm * inputKm;
 
-// Definisco la variabile finalPrice con il prezzo in forma umana
-const finalPrice = price.toFixed(2);
+        // Calcolo lo sconto e lo applico alla variabile price
+        if(inputAge < 18) {
+            
+            price = price * 0.8;
+            
+        } else if (inputAge > 65) {
 
-// Mostro message e finalPrice in console
-console.log(`${message}: ${finalPrice}€`);
+            price = price * 0.6;
+            
+        } 
+
+        // Stampo il prezzo finale in forma umana in console
+        console.log(`€ ${price.toFixed(2)}`);
+});
+

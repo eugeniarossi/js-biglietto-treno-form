@@ -24,3 +24,26 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
     ALTRIMENTI SE (userAge > 65) {message = 'Prezzo con sconto over'; price = price * 0.6;}
 
 // Definisco la variabile finalPrice con il prezzo in forma umana
+
+-----------------
+-----------------
+
+MILESTONE 1:
+Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente due input e un bottone (non stilizzati), realizziamo le specifiche scritte sopra. La risposta finale (o output) sarà anch’essa da scrivere in console.
+
+-----------------
+
+// Definisco la variabile button
+
+// Definisco la variabile con il prezzo al km
+
+// Definisco le variabili per gli input eta e km
+
+// Definisco la variabile price per il prezzo
+
+// Definisco l'evento click del button {
+    // Salvo i valori degli input nelle variabili
+    // Calcolo lo sconto e lo applico alla variabile price
+}
+
+// Stampo il prezzo finale (price) in forma umana in console
