@@ -1,0 +1,130 @@
+@import url('variables.css');
+
+/*
+*************
+RESET
+*************
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+*************
+COMMON
+*************
+*/
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 52.5rem;
+    margin: 2.5rem auto 3.125rem;
+}
+
+h2, 
+h4:not(#passenger_name) {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin: 1.5625rem 0 .3125rem;
+}
+
+.form_container, 
+.ticket_container {
+    background-color: #fff;
+    padding: 1.5625rem 1.25rem 1.25rem;
+}
+
+/*
+*************
+SECTION FORM
+*************
+*/
+
+.form_container {
+    border-radius: .4375rem;
+    margin-top: 1.25rem;
+}
+
+.form_container .inputs {
+    display: flex;
+    justify-content: center;
+    gap: 3.75rem;
+    padding-bottom: 3.125rem;
+}
+
+.form_container .inputs > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container .inputs label {
+    color: var(--primary-color);
+}
+
+.form_container .inputs input,
+.form_container .inputs select {
+    margin-top: .9375rem;
+    border-radius: .3125rem;
+    border: 1px solid var(--primary-color);
+    height: 1.75rem;
+    text-align: center;
+}
+
+.form_container .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.form_container .buttons button {
+    padding: .3125rem;
+    border-radius: .3125rem;
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color-light);
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.form_container .buttons button:hover {
+    border-color: #f79757;
+}
+
+/*
+*************
+SECTION TICKET
+*************
+*/
+
+.ticket {
+    display: flex;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.ticket > * {
+    padding: 1.5625rem 1.25rem;
+}
+
+.ticket #ticket_name {
+    background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}

@@ -5,20 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno Form</title>
+    <!-- import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- import css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <form action="/" method="get">
-        <input type="text" name="nome" id="input_name">
-        <input type="text" name="km" id="input_km">
-        <input type="text" name="eta" id="input_age">
-        <button id="form_button" type="button">Calcola</button>
-    </form>
-    <div id="nome_utente"></div>
-    <div id="prezzo_biglietto"></div>
+    <div class="container">
+        <!-- section form -->
+        <section class="section_form">
+            <h2>calcola il prezzo del tuo biglietto</h2>
+            <div class="form_container">
+                <form action="/" method="get">
+                    <div class="inputs">
+                        <div class="name">
+                            <label for="input_name">Nome Cognome</label>
+                            <input type="text" name="nome" id="input_name" required>
+                        </div>
+                        
+                        <div class="km">
+                            <label for="input_km">Km da percorrere</label>
+                            <input type="number" name="km" id="input_km" required>
+                        </div>
+                        
+                        <div class="age">
+                            <label for="input_age">Fascia d'età</label>
+                            <select name="age" id="input_age">
+                                <option value="minorenne">Minorenne</option>
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="over-65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button id="form_button" type="button">Genera</button>
+                        <button id="reset_button" type="reset">Annulla</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- /section form -->
 
+        <!-- section ticket -->
+        <section class="section_ticket">
+            <h2>il tuo biglietto</h2>
+            <div class="ticket_container">
+                <h4>dettaglio passeggeri</h4>
+                <div class="ticket">
+                    <div id="ticket_name">
+                        <h4>nome passeggero</h4>
+                        <h4 id="passenger_name"></h4>
+                    </div>
+                    <div class="ticket_main">
+                        <div class="offer">
+                            <h5>Offerta</h5>
+                            <span id="ticket_type"></span>
+                        </div>
+                        <div class="carriage">
+                            <h5>Carrozza</h5>
+                            <span id="carriage_number"></span>
+                        </div>
+                        <div class="cp">
+                            <h5>Codice CP</h5>
+                            <span id="cp_code"></span>
+                        </div>
+                        <div class="ticket_price">
+                            <h5>Costo biglietto</h5>
+                            <span id="price"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section ticket -->
+    </div>
+    
     <!-- import javascript -->
     <script src="js/main.js"></script>
 </body>
