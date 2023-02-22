@@ -109,6 +109,14 @@ SECTION TICKET
 *************
 */
 
+.section_ticket {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 .ticket {
     display: flex;
     flex-direction: column;
@@ -126,14 +134,14 @@ SECTION TICKET
 
 .ticket #ticket_main {
     display: flex;
-    justify-content: space-between;
     flex-grow: 1;
+    gap: 10%;
 }
 
 .ticket #ticket_main > * {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2.5rem;
 }
 
 @media screen and (min-width: 768px) {
