@@ -56,10 +56,17 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
 
 -----------------
 
-// Definisco la variabile per l'input nome 
+// Definisco le variabili: 
+    - reset button  
+    - ticket section
+    - offer type
+    - input nome
+    - x (random 1-9)
+    - y (random 1000 - 99999)
 
 // All'interno dell'evento click aggiungo {
     // Salvo il valore dell'input nome nella variabile
-    // Stampo nome passeggero e prezzo del biglietto sulla pagina
-    // Aggiungo con toggle una classe per fa apparire la section biglietto
+    // Stampo nome passeggero, prezzo, carrozza e codice cp del biglietto sulla pagina
+    // Aggiungo (toggle) una classe per fa apparire la section biglietto
+    // Evento onclick del reset button (per far scomparire la section biglietto)
 }
