@@ -31,7 +31,7 @@ generateButton.addEventListener('click',
 
         // Salvo i valori degli input nelle variabili
         inputAge = document.getElementById("input_age").value;
-        inputKm = document.getElementById("input_km").value;
+        inputKm = Number(document.getElementById("input_km").value);
         inputName = document.getElementById('input_name').value;
 
         // Calcolo il prezzo senza sconto
@@ -56,7 +56,7 @@ generateButton.addEventListener('click',
 
         // Stampo nome passeggero, prezzo, carrozza e codice cp del biglietto sulla pagina
         document.getElementById('passenger_name').innerHTML = inputName;
-        document.getElementById('price').innerHTML = price.toFixed(2);
+        document.getElementById('price').innerHTML = '€ ' + price.toFixed(2);
         document.getElementById('carriage_number').innerHTML = x;
         document.getElementById('cp_code').innerHTML = y;
 

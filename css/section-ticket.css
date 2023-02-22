@@ -1,0 +1,40 @@
+/*
+*************
+SECTION TICKET
+*************
+*/
+
+.section_ticket {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.ticket > * {
+    padding: 1.5625rem 1.25rem;
+}
+
+.ticket #ticket_name {
+    background-color: var(--secondary-color);
+}
+
+.ticket #ticket_main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 3.125rem;
+}
+
+.ticket #ticket_main > * {
+    display: flex;
+    justify-content: space-between;
+}

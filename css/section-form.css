@@ -1,0 +1,57 @@
+/*
+*************
+SECTION FORM
+*************
+*/
+
+.form_container {
+    border-radius: .4375rem;
+    margin-top: 1.25rem;
+    box-shadow: 1px 3px 10px 2px rgba(0,0,0,0.3);
+}
+
+.form_container .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    padding-bottom: 3.125rem;
+}
+
+.form_container .inputs > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container .inputs label {
+    color: var(--primary-color);
+}
+
+.form_container .inputs input,
+.form_container .inputs select {
+    margin-top: .9375rem;
+    border-radius: .3125rem;
+    border: 1px solid var(--primary-color);
+    height: 1.75rem;
+    text-align: center;
+}
+
+.form_container .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.form_container .buttons button {
+    padding: .3125rem;
+    border-radius: .3125rem;
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color-light);
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.form_container .buttons button:hover {
+    border-color: #f79757;
+}

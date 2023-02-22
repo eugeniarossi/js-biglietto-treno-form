@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .form_container .inputs {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .ticket {
+        flex-direction: row;
+    }
+
+    .ticket #ticket_main {
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .ticket #ticket_main > * {
+        flex-direction: column;
+    }
+
+    .ticket #ticket_main > * h5 {
+        margin-bottom: 2.5rem;
+    }
+}
