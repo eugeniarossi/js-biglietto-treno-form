@@ -135,14 +135,14 @@ SECTION TICKET
 
 .ticket #ticket_main {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    gap: 10%;
+    gap: 3.125rem;
 }
 
 .ticket #ticket_main > * {
     display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -160,5 +160,16 @@ SECTION TICKET
         flex-direction: row;
     }
 
+    .ticket #ticket_main {
+        flex-direction: row;
+        gap: 10%;
+    }
 
+    .ticket #ticket_main > * {
+        flex-direction: column;
+    }
+
+    .ticket #ticket_main > * h5 {
+        margin-bottom: 2.5rem;
+    }
 }
