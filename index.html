@@ -18,33 +18,33 @@
         <section class="section_form">
             <h2>calcola il prezzo del tuo biglietto</h2>
             <div class="form_container">
-                <form action="/" method="get">
-                    <div class="inputs">
-                        <div id="name">
-                            <label for="input_name">Nome Cognome</label>
-                            <input type="text" name="nome" id="input_name" required>
-                        </div>
-                        
-                        <div id="km">
-                            <label for="input_km">Km da percorrere</label>
-                            <input type="text" name="km" id="input_km" required>
-                        </div>
-                        
-                        <div id="age">
-                            <label for="input_age">Fascia d'età</label>
-                            <select name="age" id="input_age" required>
-                                <option value="minorenne">Minorenne</option>
-                                <option value="maggiorenne">Maggiorenne</option>
-                                <option value="over-65">Over 65</option>
-                            </select>
-                        </div>
+                
+                <div class="inputs">
+                    <div id="name">
+                        <label for="input_name">Nome Cognome</label>
+                        <input type="text" name="nome" id="input_name" required>
                     </div>
                     
-                    <div class="buttons">
-                        <button id="gen_button" type="button" class="">Genera</button>
-                        <button id="reset_button" type="reset">Annulla</button>
+                    <div id="km">
+                        <label for="input_km">Km da percorrere</label>
+                        <input type="number" min="0" name="km" id="input_km" required>
                     </div>
-                </form>
+                    
+                    <div id="age">
+                        <label for="input_age">Fascia d'età</label>
+                        <select name="age" id="input_age" required>
+                            <option value="underage">Minorenne</option>
+                            <option value="adult">Maggiorenne</option>
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button id="gen_button" type="button" class="">Genera</button>
+                    <button id="reset_button" type="reset">Annulla</button>
+                </div>
+                
             </div>
         </section>
         <!-- /section form -->

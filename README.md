@@ -64,7 +64,7 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
     - x (random 1-9)
     - y (random 1000 - 99999)
 
-// All'interno dell'evento click aggiungo {
+// All'interno dell'evento click {
     // Salvo il valore dell'input nome nella variabile
     // Stampo nome passeggero, prezzo, carrozza e codice cp del biglietto sulla pagina
     // Aggiungo (toggle) una classe per fa apparire la section biglietto
